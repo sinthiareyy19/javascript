@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tugas Javascript</title>
+    </head>
+    <body>
+
+<script language="javascript">
+
+    var pegawai = "Ridwan";
+    var jabatan = "Manager";
+    var status = "Menikah";
+
+    if(jabatan == 'Manager'){
+        gajiPokok = 15000000;
+    }
+    else if(jabatan == 'asistenManager'){
+        gajiPokok = 10000000;
+    }
+    else if(jabatan == "Staff"){
+        gajiPokok = 5000000;
+    }
+    else{
+        gajiPokok = 0; 
+    } 
+
+    let bpjs = 0.1 * gajiPokok;
+    let tunjanganJabatan = 0.15 * gajiPokok;
+
+    let tunjanganKeluarga = (status == 'Menikah') ? 0.2 * gajiPokok : 0;
+
+    let totalGaji = gajiPokok + bpjs + tunjanganJabatan + tunjanganKeluarga;
+
+    //cetak
+    document.write(`
+    <h3> Nama Pegawai : ${pegawai} </h2>
+    <h3> Jabatan Pegawai : ${jabatan} </h2>
+    <h3> Status Pegawai : ${status} </h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Data Gaji</th>
+                    <th>Nominal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gaji Pokok</td>
+                    <td>${gajiPokok}</td>
+                </tr>
+                <tr>
+                    <td>Tunjangan Jabatan</td>
+                    <td>${tunjanganJabatan}</td>
+                </tr>
+                <tr>
+                    <td>BPJS</td>
+                    <td>${bpjs}</td>
+                </tr>
+                <tr>
+                    <td>Tunjangan Keluarga</td>
+                    <td>${tunjanganKeluarga}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total Gaji</th>
+                    <th>${totalGaji}</th>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+`)
+</script>
