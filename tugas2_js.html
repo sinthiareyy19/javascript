@@ -1,0 +1,66 @@
+
+<h3 align="center">Daftar Pegawai</h3>
+<table align="center" cellpadding="10">
+    <thead>
+        <tr bgcolor="tomato">
+            <th>No</th>
+            <th>Nama Pegawai</th>
+            <th>Jabatan</th>
+            <th>Agama</th>
+            <th>Gaji Pokok</th>
+            <th>Tunjangan Jabatan</th>
+            <th>Tunjangan Kesehatan</th>
+            <th>Gaji Kotor</th>
+            <th>Zakat Profesi</th>
+            <th>Take Home Pay</th>
+        </tr>
+    </thead>
+    <tbody>
+        <script language="javascript">
+            let jabatan,
+                agama,
+                gajiPokok,
+                warna;
+
+            for (let number = 1; number <= 100; number++) {
+                if(number <= 25) jabatan = "Manager";
+                else if(number <= 50) jabatan = "Asisten Manager";
+                else if(number <= 75) jabatan = "Supervisor";
+                else if(number <= 100) jabatan = "Staff";
+
+            switch(jabatan){
+                case "Manager" : gajiPokok = 15000000; break;
+                case "Asisten Manager" : gajiPokok = 10000000; break;
+                case "Supervisor" : gajiPokok = 7000000; break;
+                case "Staff" : gajiPokok = 4000000; break;
+                default : gajiPokok = 15000000;
+            }
+
+            
+            let tunjanganJabatan = gajiPokok * 0.2;
+            let tunjanganKesehatan = gajiPokok * 0.1;
+            let gajiKotor = gajiPokok + tunjanganJabatan + tunjanganKesehatan;
+            /* zakat profesi */
+            agama = (number % 2 == 0) ? 'Non-Muslim' : 'Muslim';
+            warna = (number % 2 == 0) ? 'aqua' : 'yellow';
+            let zakatProfesi = (agama == "Muslim" && gajiKotor >= 7000000 ) ? gajiKotor * 0.025 : 0;
+            let takeHomePay = gajiKotor - zakatProfesi;
+
+                document.write(`
+                <tr bgcolor="${warna}">
+                    <td>${number}</td>
+                    <td>Pegawai ${number}</td>
+                    <td>${jabatan}</td>
+                    <td>${agama}</td>
+                    <td>Rp ${gajiPokok}</td>
+                    <td>Rp ${tunjanganJabatan}</td>
+                    <td>Rp ${tunjanganKesehatan}</td>
+                    <td>Rp ${gajiKotor}</td>
+                    <td>Rp ${zakatProfesi}</td>
+                    <td>Rp ${takeHomePay}</td>
+                </tr>           
+              `);
+            }
+    </script>
+    </tbody>
+</table>
