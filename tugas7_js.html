@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suara Hewan</title>
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $(".ayam").click(function(){
+                $(this).css({
+                    'background' : "url(images/ayam.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_ayam.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".burung").click(function(){
+                $(this).css({
+                    'background' : "url(images/burung.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_burung.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".bebek").click(function(){
+                $(this).css({
+                    'background' : "url(images/bebek.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_bebek.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".kalkun").click(function(){
+                $(this).css({
+                    'background' : "url(images/kalkun.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_kalkun.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+
+            //buas
+            $(".harimau").click(function(){
+                $(this).css({
+                    'background' : "url(images/harimau.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_harimau.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".serigala").click(function(){
+                $(this).css({
+                    'background' : "url(images/serigala.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_serigala.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".ular").click(function(){
+                $(this).css({
+                    'background' : "url(images/ular.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_ular.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".singa").click(function(){
+                $(this).css({
+                    'background' : "url(images/singa.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_singa.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+
+            //ternak
+            $(".kambing").click(function(){
+                $(this).css({
+                    'background' : "url(images/kambing.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_kambing.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".sapi").click(function(){
+                $(this).css({
+                    'background' : "url(images/sapi.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_sapi.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".babi").click(function(){
+                $(this).css({
+                    'background' : "url(images/babi.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_babi.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+            $(".kerbau").click(function(){
+                $(this).css({
+                    'background' : "url(images/kerbau.jpg)",
+                    'background-repeat': "no-repeat",
+                    'background-size': "100px 90px"
+                });
+                $("<audio></audio>").attr({
+                    'src' : "audio/suara_kerbau.mp3",
+                    'autoplay' : "autoplay"
+                }).appendTo("body");
+            });
+        });        
+    </script>
+</head>
+<body style="background-color: rgb(210, 210, 239)">
+    <div class="container p-5 my-3 border">
+    <div class="row">
+        <div class="col-12 py-4 text-center">
+            <h2>Jenis dan Suara Hewan</h2>
+            <p>Tugas Javascript : Jquery</p>
+        </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExampleSatu">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSatu">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSatu" aria-expanded="false" aria-controls="flush-collapseSatu">
+              <b>Hewan Unggas</b>
+            </button>
+          </h2>
+          <div id="flush-collapseSatu" class="accordion-collapse collapse" aria-labelledby="flush-headingSatu" data-bs-parent="#accordionFlushExampleSatu">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                          <div class="card-header bg-success text-white">Ayam</div>
+                            <div class="card-body ayam" id="card"> 
+                                <button type="button" class="btn btn-dark">Suara</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header  bg-success text-white">Burung</div>
+                             <div class="card-body burung" id="card">
+                               <button type="button" class="btn btn-dark">Suara</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header  bg-success text-white">Bebek</div>
+                             <div class="card-body bebek" id="card">
+                               <button type="button" class="btn btn-dark">Suara</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header  bg-success text-white">Kalkun</div>
+                             <div class="card-body kalkun" id="card">
+                               <button type="button" class="btn btn-dark">Suara</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+           </div>
+        </div>
+     </div>
+<br/>
+
+<div class="accordion accordion-flush" id="accordionFlushExampleDua">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingDua">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDua" aria-expanded="false" aria-controls="flush-collapseDua">
+        <b>Hewan Buas</b>
+      </button>
+    </h2>
+    <div id="flush-collapseDua" class="accordion-collapse collapse" aria-labelledby="flush-headingDua" data-bs-parent="#accordionFlushExampleDua">
+      <div class="accordion-body">
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="card text-center">
+                    <div class="card-header bg-success text-white">Harimau</div>
+                      <div class="card-body harimau" id="card"> 
+                          <button type="button" class="btn btn-dark">Suara</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card text-center">
+                      <div class="card-header  bg-success text-white">Serigala</div>
+                       <div class="card-body serigala" id="card">
+                         <button type="button" class="btn btn-dark">Suara</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card text-center">
+                      <div class="card-header  bg-success text-white">Ular</div>
+                       <div class="card-body ular" id="card">
+                         <button type="button" class="btn btn-dark">Suara</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-header  bg-success text-white">Singa</div>
+                     <div class="card-body singa" id="card">
+                       <button type="button" class="btn btn-dark">Suara</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+     </div>
+  </div>
+</div>
+<br/>
+
+<div class="accordion accordion-flush" id="accordionFlushExampleTiga">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTiga">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTiga" aria-expanded="false" aria-controls="flush-collapseTiga">
+        <b>Hewan Ternak</b>
+      </button>
+    </h2>
+    <div id="flush-collapseTiga" class="accordion-collapse collapse" aria-labelledby="flush-headingTiga" data-bs-parent="#accordionFlushExampleTiga">
+      <div class="accordion-body">
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="card text-center">
+                    <div class="card-header bg-success text-white">Kambing</div>
+                      <div class="card-body kambing" id="card"> 
+                          <button type="button" class="btn btn-dark">Suara</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card text-center">
+                      <div class="card-header  bg-success text-white">Sapi</div>
+                       <div class="card-body sapi" id="card">
+                         <button type="button" class="btn btn-dark">Suara</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-header  bg-success text-white">Babi</div>
+                     <div class="card-body babi" id="card">
+                       <button type="button" class="btn btn-dark">Suara</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-header  bg-success text-white">Kerbau</div>
+                     <div class="card-body kerbau" id="card">
+                       <button type="button" class="btn btn-dark ">Suara</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+     </div>
+  </div>
+</div>
+<br/>
+</div>
+</body>
+</html>
